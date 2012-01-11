@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>MLU Bootstrap</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -12,7 +12,7 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 
@@ -30,7 +30,7 @@
     <div class="topbar" data-scrollspy="scrollspy" >
       <div class="topbar-inner">
         <div class="container">
-          <a class="brand" href="#">Bootstrap</a>
+          <a class="brand" href="#">Bootstrap MLU</a>
           <ul class="nav">
             <li class="active"><a href="#overview">Overview</a></li>
             <li><a href="#about">About</a></li>
@@ -55,12 +55,13 @@
     <header class="jumbotron masthead" id="overview">
       <div class="inner">
         <div class="container">
-          <h1>Bootstrap, from Twitter</h1>
+          <h1>MLU Bootstrap</h1>
+          <h2>Toolkit der Martin-Luther-Universität Halle-Wittenberg<br /> basierend auf Twitter Bootstrap</h2>
           <p class="lead">
-            Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites.<br />
-            It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.<br />
+            <strong>Bootstrap</strong> ist ein Toolkit von Twitter zur schnellen Entwicklung von Web Apps und Seiten.
+            Es enthält CSS und HTML für Typografie, Formulare, Buttons, Tabellen, Raster, Navigation und mehr.<br />
           </p>
-          <p><strong>Nerd alert:</strong> Bootstrap is <a href="#less" title="Read about using Bootstrap with Less">built with Less</a> and was designed to work out of the gate with modern browsers in mind.</p>
+          <p class="lead"><strong>MLU Bootstrap</strong> enthält Farb- und Typografie-Anpassungen an das Corporate Design der Martin-Luther-Universität Halle-Wittenberg und soll das Prototyping und Entwickeln am URZ erleichtern.</p>
         </div><!-- /container -->
       </div>
     </header>
@@ -70,26 +71,17 @@
     <div class="quickstart">
       <div class="container">
         <div class="row">
-          <div class="span5">
-            <h6>Hotlink the CSS</h6>
-            <p>For the quickest and easiest start, just copy this snippet into your webpage.</p>
+          <div class="span10">
+            <h6>Hotlink CSS-Datei</h6>
+            <p>Einfach diesen Schnipsel in den <code>head</code> der Website kopieren.</p>
             <form>
-              <textarea class="copy-code" rows="1">&lt;link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css"></textarea>
+              <textarea class="copy-code xxlarge" rows="1">&lt;link rel="stylesheet" href="http://kremalicious.github.com/bootstrap-mlu/bootstrap.min.css"></textarea>
             </form>
           </div>
           <div class="span5">
-            <h6>Use it with Less</h6>
-            <p>A fan of using Less? No problem, just clone the repo and add these lines:</p>
-            <form>
-              <textarea class="copy-code" rows="2">&lt;link rel="stylesheet/less" href="/path/to/bootstrap.less"&gt;
-&lt;script src="/path/to/less.js"&gt;&lt;/script&gt;</textarea>
-            </form>
-          </div>
-          <div class="span5">
-            <h6>Fork on GitHub</h6>
-            <p>Download, fork, pull, file issues, and more with the official Bootstrap repo on Github.</p>
-            <p><a target="_blank" href="https://github.com/twitter/bootstrap" class="btn primary">Bootstrap on GitHub &raquo;</a></p>
-            <p class="current-version">Currently <a href="https://github.com/twitter/bootstrap/wiki/Changelog">v1.4.0</a></p>
+            <h6>Fork auf GitHub</h6>
+            <p>Download, fork, pull, issues erstellen.</p>
+            <p><a target="_blank" href="https://github.com/kremalicious/bootstrap-mlu" class="btn primary">MLU Bootstrap on GitHub &raquo;</a></p>
           </div>
         </div><!-- /row -->
       </div>
@@ -97,7 +89,28 @@
 
     <div class="container">
 
-
+<!-- About Bootstrap MLU
+================================================== -->
+<section id="about-mlu">
+  <div class="page-header">
+    <h1>Über MLU Bootstrap</h1>
+  </div>
+  <div class="row">
+    <div class="span-two-thirds">
+      <h3>Style Guide</h3>
+       <p>Diese Seite dient gleichzeitig als Style Guide für alle verwendbaren Elemente.</p>
+       <p>Alle Inhalte unterhalb dieses Abschnittes sind von Twitter Bootstrap übernommen, jedoch werden alle Elemente mit dem MLU Bootstrap CSS angezeigt.</p>
+    </div>
+    <div class="span-one-third">
+      <h3>Team</h3>
+      <p>Dieses Toolkit wird gepflegt von</p>
+      <ul>
+      	<li><a href="http://mkretschmann.com">Matthias Kretschmann</a></li>
+      	<li>Michael Schaarschmidt</li>
+      </ul>
+    </div>
+  </div><!-- /row -->
+</section>
 
 <!-- About Bootstrap
 ================================================== -->
@@ -133,7 +146,7 @@
       <ul>
         <li><a href="./javascript.html">Javascript plugins</a></li>
         <li>All original .less files</li>
-        <li>Fully <a href="1.4.0/bootstrap.css">compiled</a> and <a href="1.4.0/bootstrap.min.css">minified</a> CSS</li>
+        <li>Fully <a href="../bootstrap.css">compiled</a> and <a href="../bootstrap.min.css">minified</a> CSS</li>
         <li>Complete styleguide documentation</li>
         <li>Three example pages with different layouts</li>
       </ul>
@@ -146,13 +159,13 @@
       <p>Need some quick templates? Check out these basic examples we've put together:</p>
       <ul class="media-grid">
         <li>
-          <a href="examples/hero.html"><img src="assets/img/example-diagram-01.png" alt="Simple three-column layout with hero unit"></a>
+          <a href="../examples/hero.html"><img src="assets/img/example-diagram-01.png" alt="Simple three-column layout with hero unit"></a>
         </li>
         <li>
-          <a href="examples/fluid.html"><img src="assets/img/example-diagram-02.png" alt="Fluid layout with static sidebar"></a>
+          <a href="../examples/fluid.html"><img src="assets/img/example-diagram-02.png" alt="Fluid layout with static sidebar"></a>
         </li>
         <li>
-          <a href="examples/container-app.html"><img src="assets/img/example-diagram-03.png" alt="Simple hanging container for apps"></a>
+          <a href="../examples/container-app.html"><img src="assets/img/example-diagram-03.png" alt="Simple hanging container for apps"></a>
         </li>
       </ul>
     </div>
@@ -354,7 +367,7 @@
           <tr>
             <td><code>@siteWidth</code></td>
             <td><em>Computed sum of all columns and gutters</em></td>
-            <td>We use some basic match to count the number of columns and gutters and set the width of the <code>.fixed-container()</code> mixin.</td>
+            <td>We use some basic math to count the number of columns and gutters and set the width of the <code>.fixed-container()</code> mixin.</td>
           </tr>
         </tbody>
       </table>
@@ -897,7 +910,10 @@
           </tr>
         </tbody>
       </table>
-
+<pre class="prettyprint linenums">
+&lt;table class="condensed-table"&gt;
+  ...
+&lt;/table&gt;</pre>
       <h3>Example: Bordered table</h3>
       <p>Make your tables look just a wee bit sleeker by rounding their corners and adding borders on all sides.</p>
       <table class="bordered-table">
@@ -1237,7 +1253,7 @@
                 <li>
                   <label>
                     <input type="radio" name="optionsRadios" value="option2" />
-                    <span>Option two can is something else and selecting it will deselect options 1</span>
+                    <span>Option two is something else and selecting it will deselect option 1</span>
                   </label>
                 </li>
               </ul>
@@ -1971,7 +1987,7 @@ Lorem ipsum dolar sit amet illo error <a href="#" title="below">ipsum</a> verita
           <td>Node with makefile</td>
           <td>
             <p>Install the less command line compiler with npm by running the following command:</p>
-            <pre>$ npm install lessc</pre>
+            <pre>$ npm install less</pre>
             <p>Once installed just run <code>make</code> from the root of your bootstrap directory and you're all set.</p>
             <p>Additionally, if you have <a href="https://github.com/mynyml/watchr">watchr</a> installed, you may run <code>make watch</code> to have bootstrap automatically rebuilt every time you edit a file in the bootstrap lib (this isn't required, just a convenience method).</p>
           </td>
