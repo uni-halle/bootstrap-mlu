@@ -48,9 +48,13 @@ a {
   text-decoration: none;
   line-height: inherit;
   font-weight: inherit;
+  position: relative;
   &:hover {
     color: @linkColorHover;
     text-decoration: underline;
+  }
+  &:active {
+    top: 1px;
   }
 }
 

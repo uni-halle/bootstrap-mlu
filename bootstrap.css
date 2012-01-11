@@ -232,10 +232,14 @@ a {
   text-decoration: none;
   line-height: inherit;
   font-weight: inherit;
+  position: relative;
 }
 a:hover {
   color: #546f1e;
   text-decoration: underline;
+}
+a:active {
+  top: 1px;
 }
 .pull-right {
   float: right;
