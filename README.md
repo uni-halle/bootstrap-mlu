@@ -12,7 +12,7 @@ Benutzung
 Einfach diesen Schnipsel in den `head` der Website kopieren:
 
 ``` html
-<link rel="stylesheet" type="text/css" href="http://kremalicious.github.com/bootstrap-mlu/assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="http://kremalicious.github.com/bootstrap-mlu/bootstrap.min.css">
 ```
 
 Die Github Page kann als Style Guide verwendet werden:
