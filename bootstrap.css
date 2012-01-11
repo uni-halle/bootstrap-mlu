@@ -2127,7 +2127,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   text-decoration: none;
 }
 .pagination a:hover, .pagination .active a {
-  background-color: #c7eefe;
+  background-color: #e5f0d1;
 }
 .pagination .disabled a, .pagination .disabled a:hover {
   background-color: transparent;
