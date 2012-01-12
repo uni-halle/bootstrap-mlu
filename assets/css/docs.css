@@ -68,7 +68,8 @@ section > .row {
 /* Specific jumbotrons
 ------------------------- */
 /* main docs page */
-.masthead {
+.masthead,
+.subhead {
   background-color: #9bc34b;
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
@@ -77,16 +78,6 @@ section > .row {
   background-image: linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
 }
 /* supporting docs pages */
-.subhead {
-  background-color: #767d80;
-  background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#565d60), to(#767d80));
-  background-image: -webkit-linear-gradient(#565d60, #767d80);
-  background-image: -moz-linear-gradient(#565d60, #767d80);
-  background-image: -o-linear-gradient(top, #565d60, #767d80);
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#565d60), to(#767d80));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#565d60', endColorstr='#767d80', GradientType=0); /* IE8 and down */
-}
 .subhead .inner {
   padding: 36px 0 27px;
 }
