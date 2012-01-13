@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MLU Bootstrap, Stud.IP Prototyp</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="../bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      /* Override some defaults */
+      body { 
+      	margin: 0; 
+      	font-size: 14px; 
+      	line-height: 1.231;
+      	background: transparent url('http://studip.uni-halle.de/assets/images/bathtile.jpg') repeat left top;
+      }
+      
+      body, button, input, select, textarea { font-family: Arial, Helvetica, sans-serif; color: #444; }
+      
+      h1, h2, h3 {
+      	color: #000;
+      }
+      
+      .page-header {
+      	background: url('http://studip.uni-halle.de/assets/images/line-horiz.png') repeat-x left bottom;
+      	padding-bottom: 1px;
+      	margin-top: 0;
+      	border: none;
+      	-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+      }
+      
+      h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+      	color: #808080;
+      }
+      
+      a, a:visited { 
+      	color: #24437C;
+      	text-decoration: none; 
+      }
+      
+      a:hover { color: #06e; }
+      
+      input, select {
+      	border: 1px solid #fff;
+      	-webkit-box-shadow: inset 0 1px 3px #ccc;
+      	-moz-box-shadow: inset 0 1px 3px #ccc;
+      	box-shadow: inset 0 1px 3px #ccc;
+      	background: #E8EEF0;
+      }
+      
+      input:focus, textarea:focus {
+      	background: #fff;
+      	border: 1px solid #122c5f;
+      	outline: none;
+      	-webkit-box-shadow: 0 0 8px #98a9b9;
+      	-moz-box-shadow: 0 0 8px #98a9b9;
+      	box-shadow: 0 0 8px #98a9b9;
+      }
+      
+      .alert-message {
+      	font-weight: bold;
+      }
+      
+      .btn {
+      	cursor: pointer;
+      	background-color: #9dafb9;
+      	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f4f7), to(#98abb6));
+      	background-image: -webkit-linear-gradient(top, #f0f4f7, #98abb6);
+      	background-image: -moz-linear-gradient(top, #f0f4f7, #98abb6);
+      	background-image: -o-linear-gradient(top, #f0f4f7, #98abb6);
+      	background-image: -ms-linear-gradient(top, #f0f4f7, #98abb6);
+      	background-image: linear-gradient(top, #f0f4f7, #98abb6);
+      	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f0f4f7', EndColorStr='#98abb6');
+      	
+      	color: #222;
+      	text-shadow: #eaeaea 0 1px 0;
+      	padding: 1% 4%;
+      	border: 1px solid white;
+      	-webkit-box-shadow: 0px 1px 2px #888;
+      	-moz-box-shadow: 0px 1px 2px #888;
+      	box-shadow: 0px 1px 2px #888;
+      	position: relative;
+      	-webkit-transition: all 0.2s linear;
+      	-moz-transition: all 0.2s linear;
+      	-o-transition: all 0.2s linear;
+      	transition: all 0.2s linear;
+      	display: inline-block;
+      	font-weight: bold;
+      	width: auto;
+      	margin-bottom: 0;
+      	-webkit-border-radius: 0;
+      	-moz-border-radius: 0;
+      	border-radius: 0;
+      
+      }
+      
+      .btn.primary {
+      	background-color: #153163;
+      	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+      	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,0)));
+      	background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
+      	background-image: -o-linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
+      	background-image: -ms-linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
+      	background-image: linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
+      	padding: 1% 4%;
+      	border: 1px solid white;
+      	-webkit-box-shadow: 0px 1px 2px #888;
+      	-moz-box-shadow: 0px 1px 2px #888;
+      	box-shadow: 0px 1px 2px #888;
+      	position: relative;
+      	display: inline-block;
+      	font-weight: bold;
+      	color: #fff;
+      	text-shadow: 0 -1px 0 #000;
+      	width: auto;
+      	margin-bottom: 0;
+      }
+      
+      .container > footer p {
+        text-align: center; /* center align it with the container */
+      }
+      .container {
+        width: 820px;
+      }
+
+      body > .container {
+        border: 1px solid #fff;
+        background-color: #D3DEE3;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.7)), to(#d3dee3), color-stop(.1,#d3dee3));
+        background-image: -moz-linear-gradient(top, rgba(255,255,255,.4), #d3dee3, #d3dee3 20%);
+        background-image: gradient(linear, left top, left bottom, from(rgba(255,255,255,.4)), to(#d3dee3), color-stop(.1,#d3dee3));
+        -webkit-box-shadow: 0px 2px 10px #777;
+        -moz-box-shadow: 0px 2px 10px #777;
+        box-shadow: 0px 2px 10px #777;
+        filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=120, Strength=3);
+        -webkit-border-top-left-radius: 30px;
+        -moz-border-radius-topleft: 30px;
+        border-top-left-radius: 30px;
+        min-height: 90px;
+        margin: 2em auto;
+        text-shadow: #eaeaea 0 1px 0;
+        padding: 2% 3%;
+      }
+
+    </style>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="content">
+        <div class="page-header">
+          <h1>Page name <small>Supporting text or tagline</small></h1>
+        </div>
+        <div class="row">
+          <div class="span10">
+            <h2>Main content</h2>
+          </div>
+          <div class="span4">
+            <h3>Secondary content</h3>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
