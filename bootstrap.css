@@ -1470,7 +1470,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
 .nav .menu-dropdown,
 .topbar div > ul .dropdown-menu,
 .nav .dropdown-menu {
-  background-color: #333;
+  background-color: #005133;
 }
 .topbar div > ul .menu-dropdown a.menu,
 .nav .menu-dropdown a.menu,
@@ -1497,7 +1497,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
 .nav .menu-dropdown li a,
 .topbar div > ul .dropdown-menu li a,
 .nav .dropdown-menu li a {
-  color: #999;
+  color: #e6e6e6;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 .topbar div > ul .menu-dropdown li a:hover,
@@ -1526,8 +1526,8 @@ table .headerSortUp.purple, table .headerSortDown.purple {
 .nav .menu-dropdown .divider,
 .topbar div > ul .dropdown-menu .divider,
 .nav .dropdown-menu .divider {
-  background-color: #222;
-  border-color: #444;
+  background-color: #00472d;
+  border-color: #005b39;
 }
 .topbar ul .menu-dropdown li a, .topbar ul .dropdown-menu li a {
   padding: 4px 15px;
@@ -1598,7 +1598,7 @@ a.menu:after, .dropdown-toggle:after {
   clear: both;
   font-weight: normal;
   line-height: 18px;
-  color: #808080;
+  color: #e6e6e6;
   text-shadow: 0 1px 0 #ffffff;
 }
 .topbar .dropdown-menu a:hover,
