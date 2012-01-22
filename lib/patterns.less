@@ -179,7 +179,7 @@
   // .menu-dropdown for backwards compatibility
   .menu-dropdown,
   .dropdown-menu {
-    background-color: #333;
+    background-color: @greenMluDark;
     // a.menu for backwards compatibility
     a.menu,
     .dropdown-toggle {
@@ -190,7 +190,7 @@
       }
     }
     li a {
-      color: #999;
+      color: @grayLighter;
       text-shadow: 0 1px 0 rgba(0,0,0,.5);
       &:hover {
         #gradient > .vertical(#292929,#191919);
@@ -201,8 +201,8 @@
       color: @white;
     }
     .divider {
-      background-color: #222;
-      border-color: #444;
+      background-color: darken(@greenMluDark, 2);
+      border-color: lighten(@greenMluDark, 2);
     }
   }
 }
@@ -287,7 +287,7 @@ a.menu:after,
     clear: both;
     font-weight: normal;
     line-height: 18px;
-    color: @gray;
+    color: @grayLighter;
     text-shadow: 0 1px 0 @white;
     // Hover state
     &:hover,
