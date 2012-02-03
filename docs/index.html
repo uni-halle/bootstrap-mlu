@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>MLU Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -38,7 +38,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="./index.html">Bootstrap</a>
+          <a class="brand" href="./index.html">MLU Bootstrap</a>
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active">
@@ -78,35 +78,72 @@
 ================================================== -->
 <header class="jumbotron masthead">
   <div class="inner">
-    <h1>Bootstrap, from Twitter</h1>
-    <p>Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.</p>
-    <p class="download-info">
+    <h1>MLU Bootstrap</h1>
+    <p>Toolkit der Martin-Luther-Universität Halle-Wittenberg basierend auf Twitter Bootstrap</p>
+    
+    <!--<p class="download-info">
       <a href="https://github.com/twitter/bootstrap/" class="btn btn-primary btn-large">View project on GitHub</a>
       <a href="assets/bootstrap.zip" class="btn btn-large">Download Bootstrap</a>
-    </p>
+    </p>-->
   </div>
-
-  <ul class="quick-links">
-    <li><a href="./upgrading.html">Upgrading from 1.4</a></li>
-    <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
-    <li><a href="https://github.com/twitter/bootstrap/wiki/Roadmap">Roadmap</a></li>
-    <li><a href="https://github.com/twitter/bootstrap/wiki/Changelog">Changelog</a></li>
-    <li class="divider">&middot;</li>
-    <li>
-      <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="114px" height="20px"></iframe>
-    </li>
-    <li>
-      <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
-    </li>
-    <li class="divider">&middot;</li>
-    <li class="follow-btn">
-      <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-width="145px" data-link-color="#0069D6" data-show-count="false">Follow @twbootstrap</a>
-    </li>
-    <li class="tweet-btn">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
-    </li>
-  </ul>
 </header>
+
+<div class="quickstart">
+  <div class="container">
+    <div class="row">
+      <div class="span8">
+        <h6>Hotlink CSS-Datei</h6>
+        <p>Einfach diesen Schnipsel in den <code>head</code> der Website kopieren.</p>
+        <form>
+          <textarea class="copy-code input-xxlarge" rows="1">&lt;link rel="stylesheet" href="http://kremalicious.github.com/bootstrap-mlu/assets/css/bootstrap.min.css"></textarea>
+        </form>
+      </div>
+      <div class="span4">
+        <h6>Fork auf GitHub</h6>
+        <p>Download, fork, pull, issues erstellen.</p>
+        <p><a target="_blank" href="https://github.com/kremalicious/bootstrap-mlu" class="btn primary">MLU Bootstrap auf GitHub &raquo;</a></p>
+      </div>
+    </div><!-- /row -->
+  </div>
+</div>
+
+<hr class="soften">
+
+<!-- About Bootstrap MLU
+================================================== -->
+<div id="about-mlu" class="marketing">
+  <h1>Über MLU Bootstrap</h1>
+  <div class="row">
+    <div class="span6">
+      <p><strong>MLU Bootstrap</strong> enthält Farb- und Typografie-Anpassungen an das Corporate Design der Martin-Luther-Universität Halle-Wittenberg und soll das Prototyping und Entwickeln am URZ erleichtern.</p>
+      <p><strong>Bootstrap</strong> ist ein Toolkit von Twitter zur schnellen Entwicklung von Web Apps und Seiten. Es enthält CSS und HTML für Typografie, Formulare, Buttons, Tabellen, Raster, Navigation und mehr.</p>
+    </div>
+    <div class="span6">
+      <h3>Style Guide</h3>
+       <p>Diese Seite dient gleichzeitig als Style Guide für alle verwendbaren Elemente.</p>
+       <p>Alle Inhalte unterhalb dieses Abschnittes sind von Twitter Bootstrap übernommen, jedoch werden alle Elemente mit dem MLU Bootstrap CSS angezeigt.</p>
+      <h3>Team</h3>
+      <p>Dieses Toolkit wird gepflegt von</p>
+      <ul>
+      	<li><a href="http://mkretschmann.com">Matthias Kretschmann</a></li>
+      	<li>Michael Schaarschmidt</li>
+      </ul>
+      
+    </div>
+  </div><!-- /row -->
+  
+  <div class="row">
+      <div class="span12">
+        <h3>MLU Beispiele</h3>
+        <ul class="media-grid">
+          <li>
+            <a href="examples/studip.html"><img src="assets/img/examples/bootstrap-example-studip.png" alt="Stud.IP Prototyp"><span class="caption">Stud.IP Prototyp</span></a>
+          </li>
+        </ul>
+      </div>
+    </div><!-- /row -->
+    
+</div>
 
 <hr class="soften">
 
@@ -186,28 +223,6 @@
       <p>Brought to you by an experienced <a href="http://twitter.com/fat">engineer</a> and <a href="http://twitter.com/mdo">designer</a>.</p>
     </div>
   </div><!--/row-->
-
-  <hr class="soften">
-
-  <h1>Built with Bootstrap.</h1>
-  <p class="marketing-byline">For even more sites built with Bootstrap, <a href="http://builtwithbootstrap.tumblr.com/" target="_blank">visit the unofficial Tumblr</a> or <a href="./examples.html">browse the examples</a>.</p>
-  <ul class="thumbnails example-sites">
-    <li class="span4">
-      <a class="thumbnail" href="http://kippt.com/" target="_blank">
-        <img src="assets/img/example-sites/kippt.png" alt="Kippt">
-      </a>
-    </li>
-    <li class="span4">
-      <a class="thumbnail" href="http://www.fleetio.com/" target="_blank">
-        <img src="assets/img/example-sites/fleetio.png" alt="Fleetio">
-      </a>
-    </li>
-    <li class="span4">
-      <a class="thumbnail" href="http://www.jshint.com/" target="_blank">
-        <img src="assets/img/example-sites/jshint.png" alt="JS Hint">
-      </a>
-    </li>
-  </ul>
 
 </div><!-- /.marketing -->
 

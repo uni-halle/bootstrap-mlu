@@ -8,7 +8,7 @@
 // --------------------------------------------------
 
 // Links
-@linkColor:             #08c;
+@linkColor:             #81ab2e;
 @linkColorHover:        darken(@linkColor, 15%);
 
 // Grays
@@ -23,7 +23,9 @@
 // Accent colors
 @blue:                  #049cdb;
 @blueDark:              #0064cd;
-@green:                 #46a546;
+@green:             	#81ab2e;
+@greenMlu:          	#9bc34b;
+@greenMluDark:         	#005133;
 @red:                   #9d261d;
 @yellow:                #ffc40d;
 @orange:                #f89406;
@@ -31,13 +33,13 @@
 @purple:                #7a43b6;
 
 // Typography
-@baseFontSize:          13px;
+@baseFontSize:          14px;
 @baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@baseLineHeight:        18px;
+@baseLineHeight:        20px;
 @textColor:             @grayDark;
 
 // Buttons
-@primaryButtonBackground:    @linkColor;
+@primaryButtonBackground:    @greenMlu;
 
 
 
@@ -59,11 +61,11 @@
 
 // Navbar
 @navbarHeight:                    40px;
-@navbarBackground:                @grayDarker;
-@navbarBackgroundHighlight:       @grayDark;
+@navbarBackground:                @greenMluDark;
+@navbarBackgroundHighlight:       lighten(@greenMluDark, 5%);
 
 @navbarText:                      @grayLight;
-@navbarLinkColor:                 @grayLight;
+@navbarLinkColor:                 @grayLighter;
 @navbarLinkColorHover:            @white;
 
 // Form states and alerts
