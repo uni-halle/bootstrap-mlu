@@ -204,6 +204,17 @@ hr.soften {
   }
 }
 
+/* Quick Start
+-------------------------------------------------- */
+
+.quickstart textarea {
+	width: 100%;
+}
+
+.quickstart h2 [class^="icon-"] {
+	vertical-align: middle;
+}
+
 
 /* Quick links
 -------------------------------------------------- */
